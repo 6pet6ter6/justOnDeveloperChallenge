@@ -7,3 +7,11 @@ jdk: oraclejdk12
 
 script:
   - ./gradlew build
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "kFjY9IAsD/SmiKgz7VBMfnJfd7V+DAqlC7nOF2OcKRUZAEnh07WQ0ZqFYGjv8S1lDbzMnp5Lyo9//XW67RGk48PAthuPC5bwvRNX/qJ4NJ22F2wPrt00lFe93+oKRt9VmSu0PI897mHBj7a9vb2QPG5MTBfZygHPkUWujhQzv/hSfLBp5A5q+2uRuYX5Bo2oUwsD+A1JK5GlRXoj7Q3KkzoYsPEQsKvXJZbEvYZrq4l240cZYmYJWumsyddzgaD+J3MHR7H5sfy+npg80f6ym8AVwhN4LV3SMN/E6m+0EXaI5QTl6HJYlBlszRnvj1Dx7cmcVrDdv1YEKC0TaKrF5kI543e+UvyZumj7CBTlLxnQHybhiNZVTVKapbh87nLM0mVCSDkTwXrZSaNmc3Zx1y0qHloS03f11N5SfkWw89u/ie0Qsg/NOxWzR+WvJYgFJJGdu7UxNHtsOo1l2ogrutCOwgxQnLoAFyluwMeN43RdDGcy9L3i4XHdntmxkCHypSyph7spbMP7vyHgTQvbsLC0VSrgqTDGk3sonQWMvHTNnZCiRpOsZLlSYQzKtxN6jMGxtLz98x/eGVFhBRV1JmVGdZqidhXx5xdTxai3NWA89IOf4HxcmDeyBwFbrgm1QAt5fbeJKbxy5ZgW3B5ObYHddfPJl2mQ1htm4beHh9c="
+  app: jo-dev-challenge
+  on:
+    repo: 6pet6ter6/justOnDeveloperChallenge
